@@ -1,16 +1,18 @@
-prompt ("Enter your name");
-let a = prompt ("Enter your age"); // Conditional (ternary) operator and it ask the user to enter their name and age.
-console.log(typeof a); 
-a = Number.parseInt(a); // It converts the age from a string to a number.
-alert (a >= 18 ? "You are an adult." : "You are a minor."); // It checks if the age is greater than or equal to 18 and displays a message accordingly.
+let name = prompt("Enter your name");
+let age = prompt("Enter your age");  // This is still a string
 
+if (age === "" || age === null) {  
+    alert(`${name}, please enter your age!`);
+} else {
+    age = Number.parseInt(age); // now convert to number
 
-if (a <= 0 || a > 100) {
-    alert("Please enter a valid age.");
+    if (age <= 0 || age > 100 || isNaN(age)) {
+        alert(`${name}, please enter a valid age.`);
+    } 
+    else if (age < 18) {
+        alert(`${name}, you are a minor.`);
+    } 
+    else {
+        alert(`${name}, you are an adult.`);
+    }
 }
-else if (a < 18) {
-    alert("You are a minor.");
-}
-else {
-    alert("You are an adult.");
-} // else should be in the end of the code as it is the default case when all other conditions are false.

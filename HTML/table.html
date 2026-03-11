@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,25 +9,31 @@
         table {
             width: 100%;
         }
+
         th {
             background-color: rgb(42, 165, 42);
             color: rgb(252, 248, 247);
         }
+
         .total_GPA {
             color: rgb(0, 255, 0);
         }
+
         .fail {
             color: rgb(255, 0, 0);
         }
-        tr{
+
+        tr {
             background-color: rgb(255, 255, 255);
         }
-        tr:hover{
+
+        tr:hover {
             background-color: rgb(92, 90, 107);
         }
-    </style>  
+    </style>
 
 </head>
+
 <body>
     <div>
         <!-- <thead></thead> and <tbody></tbody> are optional in a table. If they are not specified, the browser will automatically create them and place the rows in the appropriate section. The <thead> element is used to group the header content of a table, while the <tbody> element is used to group the body content of a table. The <tfoot> element is used to group the footer content of a table. It is also optional and can be used to provide summary information or additional details about the table. -->
@@ -35,43 +42,45 @@
 
 
         <table border="1" cellpadding="10" cellspacing="16" style="background-color: aqua; ">
-            <caption style="background-color: rgb(8, 24, 242); color: rgb(230, 237, 238);">Student Information that applied for admission today</caption>
+            <caption style="background-color: rgb(8, 24, 242); color: rgb(230, 237, 238);">Student Information that
+                applied for admission today</caption>
             <tr>
-            <th>Name</th>
-            <th>Age</th>
-            <th>last education qualification</th>
-            <th>2nd highest qualification</th>
-            <th>both GPA total</th>
-            </tr>
-            <tr>
-            <td>John</td>
-            <td>20</td>
-            <td>HSC</td>
-            <td>SSC</td>
-            <td class="total_GPA">8.5</td>
+                <th>Name</th>
+                <th>Age</th>
+                <th>last education qualification</th>
+                <th>2nd highest qualification</th>
+                <th>both GPA total</th>
             </tr>
             <tr>
-            <td>Smith</td>
-            <td>22</td>
-            <td>HSC</td>
-            <td>SSC</td>
-            <td class="total_GPA">8.0</td>
+                <td>John</td>
+                <td>20</td>
+                <td>HSC</td>
+                <td>SSC</td>
+                <td class="total_GPA">8.5</td>
             </tr>
-             <tr>
-            <td>David</td>
-            <td>21</td>
-            <td>HSC</td>
-            <td>SSC</td>
-            <td class="total_GPA">10</td>
+            <tr>
+                <td>Smith</td>
+                <td>22</td>
+                <td>HSC</td>
+                <td>SSC</td>
+                <td class="total_GPA">8.0</td>
             </tr>
-             <tr>
-            <td>Michael</td>
-            <td>23</td>
-            <td>HSC</td>
-            <td>SSC</td>
-            <td class="fail">4</td>
+            <tr>
+                <td>David</td>
+                <td>21</td>
+                <td>HSC</td>
+                <td>SSC</td>
+                <td class="total_GPA">10</td>
+            </tr>
+            <tr>
+                <td>Michael</td>
+                <td>23</td>
+                <td>HSC</td>
+                <td>SSC</td>
+                <td class="fail">4</td>
             </tr>
         </table>
     </div>
 </body>
-</html>             
+
+</html>

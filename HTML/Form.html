@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>&lt;Form&gt; in &lt;HTML&gt;</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #e1ff1e;
+        }
+
+        .heading {
+            color: #333;
+        }
+
+        .Section-heading,
+        .Club-heading,
+        .birthdate-heading,
+        .country-heading,
+        .Documents,
+        .Profile-Picture {
+            color: #555;
+            margin-top: 20px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select {
+            width: 300px;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #a06345;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            bottom: 0cqi;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="heading">Application Form</h1>
+        <input type="text" placeholder="Enter your name" /> <br />
+        <input type="email" placeholder="Enter your email" /> <br />
+        <input type="password" placeholder="Enter your password" /> <br />
+        <h2 class="Section-heading">Gender</h2>
+        <input type="radio" name="gender" value="male" id="Male" />
+        <label for="Male">Male</label> <br />
+        <input type="radio" name="gender" value="female" id="Female" />
+        <label for="Female">Female</label> <br />
+        <input type="radio" name="gender" value="other" id="Other" />
+        <label for="Other">Other</label> <br />
+        <h2 class="Club-heading">Select your club</h2>
+        <input type="checkbox" name="club" value="sports" id="Sports" class="Red green" />
+        <label for="Sports">Sports</label> <br />
+        <input type="checkbox" name="club" value="music" id="Music" class="red blue" />
+        <label for="Music">Music</label> <br />
+        <input type="checkbox" name="club" value="art" id="Art" class="red" />
+        <label for="Art">Art</label> <br />
+        <h2 class="birthdate-heading">Select your date of birth</h2>
+        <input type="date" name="dob" /> <br />
+        <h2 class="country-heading">Select your country</h2>
+        <select name="country">
+            <option value="usa">USA</option>
+            <option value="india">India</option>
+            <option value="uk">UK</option>
+            <option value="australia">Australia</option>
+            <option value="other">Other</option>
+        </select> <br />
+        <h2 class="Documents">Upload Documents</h2>
+        <input type="file" name="documents" /> <br />
+        <h2 class="Profile-Picture">Upload Profile Picture</h2>
+        <input type="file" name="profile-picture" accept="image/*" /> <br />
+        <br />
+        <input type="reset" name="reset" /> <br /> <br />
+        <button type="submit">Submit</button>
+    </div>
+</body>
+
+</html>
