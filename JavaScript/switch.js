@@ -1,45 +1,45 @@
 let month = prompt("Enter your birth month");
 if (month === "" || month === null) {
-    alert("Please enter your birth month!");
+    console.log("Please enter your birth month!");
 } else {
 switch(month.toLocaleLowerCase().trim()) {
     case "january":
-        alert("you are Dante");
+        console.log("you are Dante");
         break;
     case "february":
-        alert("you are Vergil");
+        console.log("you are Vergil");
         break;
     case "march":
-        alert("you are Leon");
+        console.log("you are Leon");
         break;
     case "april":
-        alert("you are Chris");
+        console.log("you are Chris");
         break;
     case "may":
-        alert("you are Jill");
+        console.log("you are Jill");
         break;
     case "june":
-        alert("you are Ada");
+        console.log("you are Ada");
         break;
     case "july":
-        alert("you are Mario");
+        console.log("you are Mario");
         break;
     case "august":
-        alert("you are Johan");
+        console.log("you are Johan");
         break;
     case "september":
-        alert("you are Talia al Ghul");
+        console.log("you are Talia al Ghul");
         break;
     case "october":
-        alert("you are Lara Croft");
+        console.log("you are Lara Croft");
         break;
     case "november":
-        alert("you are Morrigan Aensland");
+        console.log("you are Morrigan Aensland");
         break;
     case "december":
-        alert("you are Raj");
+        console.log("you are Raj");
         break;
     default:
-        alert("Enter a valid month");
+        console.log("Enter a valid month");
 }
 }

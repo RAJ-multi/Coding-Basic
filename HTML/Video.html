@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>&lt;Video&gt; in &lt;HTML&gt;</title>
+        <style>
+                /* General Page Styling */
+                body {
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        background-color: #0f0f0f;
+                        /* YouTube-style dark background */
+                        color: #ffffff;
+                        line-height: 1.6;
+                        max-width: 1000px;
+                        margin: 0 auto;
+                        padding: 20px;
+                }
+
+                h1 {
+                        text-align: center;
+                        color: #ff0000;
+                        /* YouTube Red */
+                        border-bottom: 2px solid #333;
+                        padding-bottom: 10px;
+                }
+
+                h2 {
+                        border-left: 5px solid #ff0000;
+                        padding-left: 15px;
+                        margin-top: 40px;
+                }
+
+                /* List Styling */
+                ol {
+                        padding-left: 20px;
+                }
+
+                li {
+                        font-weight: bold;
+                        margin-bottom: 15px;
+                        font-size: 1.1rem;
+                }
+
+                a {
+                        color: #3ea6ff;
+                        text-decoration: none;
+                }
+
+                a:hover {
+                        text-decoration: underline;
+                }
+
+                /* Video Container Styling */
+                .video-container {
+                        position: relative;
+                        padding-bottom: 56.25%;
+                        /* 16:9 Aspect Ratio */
+                        height: 0;
+                        overflow: hidden;
+                        max-width: 100%;
+                        background: #000;
+                        border-radius: 12px;
+                        margin: 10px 0 30px 0;
+                        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+                }
+
+                .video-container iframe {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        border: 0;
+                }
+
+                /* Local Video and iFrame List */
+                video,
+                iframe[src*="kworb.net"] {
+                        display: block;
+                        margin: 20px auto;
+                        border-radius: 12px;
+                        border: 2px solid #333;
+                        max-width: 100%;
+                }
+
+                /* Remove bullets from the inner list used for spacing */
+                ol ol {
+                        list-style-type: none;
+                        padding-left: 0;
+                }
+        </style>
+</head>
+
+<body>
+        <h1>Top 3 YouTube Videos by Views</h1>
+
+        <ol>
+                <li>
+                        <a href="https://youtu.be/XqZsoesa55w?si=oUGU-iiu7iT7B6Wc" target="_blank">
+                                "Baby Shark Dance" by Pinkfong (16,742,876,445 views)
+                        </a>
+                        <ol>
+                                <li>
+                                        <div class="video-container">
+                                                <iframe src="https://www.youtube.com/embed/XqZsoesa55w"
+                                                        title="YouTube video player" allowfullscreen></iframe>
+                                        </div>
+                                </li>
+                        </ol>
+                </li>
+
+                <li>
+                        <a href="https://youtu.be/kJQP7kiw5Fk?si=_fSVX0Dq9u4TgPiG" target="_blank">
+                                Luis Fonsi - Despacito ft. Daddy Yankee (8,958,162,186 views)
+                        </a>
+                        <ol>
+                                <li>
+                                        <div class="video-container">
+                                                <iframe src="https://www.youtube.com/embed/kJQP7kiw5Fk"
+                                                        title="YouTube video player" allowfullscreen></iframe>
+                                        </div>
+                                </li>
+                        </ol>
+                </li>
+
+                <li>
+                        <a href="https://youtu.be/e_04ZrNroTo?si=mxJP341gPseps_HZ" target="_blank">
+                                Wheels on the Bus | @CoComelon (8,634,584,492 views)
+                        </a>
+                        <ol>
+                                <li>
+                                        <div class="video-container">
+                                                <iframe src="https://www.youtube.com/embed/e_04ZrNroTo"
+                                                        title="YouTube video player" allowfullscreen></iframe>
+                                        </div>
+                                </li>
+                        </ol>
+                </li>
+        </ol>
+
+        <h2>Live Stats Table</h2>
+        <iframe src="https://kworb.net/youtube/topvideos.html" width="100%" height="450" loading="lazy"></iframe>
+
+        <h2>A live wallpaper if you like: </h2>
+        <video width="640" height="360" controls autoplay loop muted>
+                <source src="Video/hidden-temple.3840x2160.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+        </video>
+
+</body>
+
+</html>

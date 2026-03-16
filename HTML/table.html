@@ -4,81 +4,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>&lt;Table&gt; in &lt;HTML&gt;</title>
+    <title>Zenith Digital - Admission Data</title>
     <style>
         table {
             width: 100%;
+            border-collapse: collapse;
+            /* This makes the borders look much cleaner than cellspacing */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px 0;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
         }
 
         th {
             background-color: rgb(42, 165, 42);
-            color: rgb(252, 248, 247);
+            color: white;
+            padding: 15px;
+            text-align: left;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* Zebra Striping (Automatic alternating colors) */
+        tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* Hover effect */
+        tbody tr:hover {
+            background-color: #d1ffd1;
+            /* Light green highlight on hover */
+            cursor: pointer;
+            transition: 0.3s;
         }
 
         .total_GPA {
-            color: rgb(0, 255, 0);
+            color: #2e7d32;
+            font-weight: bold;
         }
 
         .fail {
-            color: rgb(255, 0, 0);
+            color: #d32f2f;
+            font-weight: bold;
+            background-color: #ffebee;
+            /* Light red background for failed rows */
         }
 
-        tr {
-            background-color: rgb(255, 255, 255);
+        /* Styling the caption */
+        caption {
+            padding: 15px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            background-color: #333;
+            color: white;
+            border-radius: 10px 10px 0 0;
         }
 
-        tr:hover {
-            background-color: rgb(92, 90, 107);
+        /* Footer styling */
+        tfoot {
+            background-color: #333;
+            color: white;
+            font-weight: bold;
         }
     </style>
-
 </head>
 
 <body>
-    <div>
-        <!-- <thead></thead> and <tbody></tbody> are optional in a table. If they are not specified, the browser will automatically create them and place the rows in the appropriate section. The <thead> element is used to group the header content of a table, while the <tbody> element is used to group the body content of a table. The <tfoot> element is used to group the footer content of a table. It is also optional and can be used to provide summary information or additional details about the table. -->
+    <div style="padding: 20px;">
+        <table>
+            <caption>Daily Admission Application Summary</caption>
 
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Age</th>
+                    <th>Latest Qualification</th>
+                    <th>Previous Qualification</th>
+                    <th>Combined GPA</th>
+                </tr>
+            </thead>
 
+            <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>20</td>
+                    <td>HSC</td>
+                    <td>SSC</td>
+                    <td class="total_GPA">8.5</td>
+                </tr>
+                <tr>
+                    <td>Smith</td>
+                    <td>22</td>
+                    <td>HSC</td>
+                    <td>SSC</td>
+                    <td class="total_GPA">8.0</td>
+                </tr>
+                <tr>
+                    <td>David</td>
+                    <td>21</td>
+                    <td>HSC</td>
+                    <td>SSC</td>
+                    <td class="total_GPA">10.0</td>
+                </tr>
+                <tr class="fail">
+                    <td>Michael</td>
+                    <td>23</td>
+                    <td>HSC</td>
+                    <td>SSC</td>
+                    <td>4.0</td>
+                </tr>
+            </tbody>
 
-
-        <table border="1" cellpadding="10" cellspacing="16" style="background-color: aqua; ">
-            <caption style="background-color: rgb(8, 24, 242); color: rgb(230, 237, 238);">Student Information that
-                applied for admission today</caption>
-            <tr>
-                <th>Name</th>
-                <th>Age</th>
-                <th>last education qualification</th>
-                <th>2nd highest qualification</th>
-                <th>both GPA total</th>
-            </tr>
-            <tr>
-                <td>John</td>
-                <td>20</td>
-                <td>HSC</td>
-                <td>SSC</td>
-                <td class="total_GPA">8.5</td>
-            </tr>
-            <tr>
-                <td>Smith</td>
-                <td>22</td>
-                <td>HSC</td>
-                <td>SSC</td>
-                <td class="total_GPA">8.0</td>
-            </tr>
-            <tr>
-                <td>David</td>
-                <td>21</td>
-                <td>HSC</td>
-                <td>SSC</td>
-                <td class="total_GPA">10</td>
-            </tr>
-            <tr>
-                <td>Michael</td>
-                <td>23</td>
-                <td>HSC</td>
-                <td>SSC</td>
-                <td class="fail">4</td>
-            </tr>
+            <tfoot>
+                <tr>
+                    <td colspan="4" style="text-align: right;">Total Applicants Processed:</td>
+                    <td>4</td>
+                </tr>
+            </tfoot>
         </table>
     </div>
 </body>

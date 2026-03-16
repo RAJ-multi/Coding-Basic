@@ -51,3 +51,7 @@ let Raj_SSC_GPA = 78
 console.log("Did Raj pass both HSC and SSC?", (Raj_HSC_GPA >= 40) && (Raj_SSC_GPA >= 40)) // Logical AND
 
 // !false is true, !true is false
+
+
+//alternative way to check if Raj passed either HSC or SSC
+console.log("you can ",(Raj_HSC_GPA >= 40? "pass HSC" : "fail HSC"), "and ", (Raj_SSC_GPA >= 40? "pass SSC" : "fail SSC")) // Logical OR
