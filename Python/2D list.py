@@ -44,3 +44,4 @@ if original_list in original_list: # this condition checks if the original_list 
     if original_list not in unique: # this condition checks if the original_list is not already in the unique list
         unique.append(original_list) # this code appends the original_list to the unique list
 print(unique)
+print(numbers.pop(3)) 

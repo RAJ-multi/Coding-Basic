@@ -1,0 +1,50 @@
+<!-- Goal: Real-world UI -->
+<!-- Create: -->
+<!-- Centered login box -->
+<!-- Email + password -->
+<!-- Login button -->
+<!-- 💡 Bonus: -->
+<!-- Add “Forgot password?” link -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Login</title>
+</head>
+
+<body style="background-color: black;">
+    <center
+        style="margin: 100px; border: 1px solid rgb(244, 2, 2); width: 300px; padding: 20px; border-radius: 10px; background-color: white;">
+        <h1>Login:</h1>
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        <h2>Email:</h2>
+                    </td>
+                    <td><input type="email" name="email" placeholder="Enter your email" required></td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2>Password:</h2>
+                    </td>
+                    <td><input type="password" name="password" placeholder="Enter your password (max=8)" maxlength="8"
+                            required></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="submit" name="login">Login</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><a href="forgot_password.html">Forgot password</a></td>
+                </tr>
+            </table>
+        </form>
+    </center>
+</body>
+
+</html>

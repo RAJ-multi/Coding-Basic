@@ -1,0 +1,22 @@
+/* by normal word: */
+.dev {
+    color: blue;
+}
+
+/* by rgb*/
+
+.rgb {
+    color: rgb(117, 189, 189);
+}
+
+/* by hex color picker*/
+
+.hex {
+    color: #c57f7f;;
+}
+
+/* by HSL( Hue, Saturation & Lightness )*/
+
+.HSL {
+    color: hsl(0, 123, 80%);
+}

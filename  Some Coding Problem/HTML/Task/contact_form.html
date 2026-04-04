@@ -1,0 +1,50 @@
+<!-- Task: -->
+<!-- 1)Name input -->
+<!-- 3)password input -->
+<!-- 4)Gender ( radio buttons ) -->
+<!-- 5)Skills ( Checkbox ) -->
+<!-- 6)Submit button -->
+<!-- bonus: -->
+<!-- a) Use required -->
+<!-- b) Use Placeholder -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+
+<body>
+    <h1 class="heading">Application Form</h1>
+    <form action="https://formsubmit.co/rajsen1016@email.com" method="POST" enctype="multipart/form-data">
+        <h2>Enter your name:</h2>
+        <input type="text" name="name" placeholder="Enter your name" required /> <br />
+        <h2>Enter your email:</h2>
+        <input type="email" name="email" placeholder="Enter your email" required /> <br />
+        <h2>Enter your password</h2>
+        <input type="password" name="password" placeholder="Enter your password (max=8)" maxlength="8" required />
+        <br />
+
+        <h2 class="Section-heading">Gender</h2>
+        <input type="radio" name="gender" value="male" id="Male" />
+        <label for="Male">Male</label> <br />
+        <input type="radio" name="gender" value="female" id="Female" />
+        <label for="Female">Female</label> <br />
+        <input type="radio" name="gender" value="other" id="Other" />
+        <label for="Other">Other</label> <br />
+
+        <h2 class="Club-heading">Select your skill</h2>
+        <input type="checkbox" name="Skill" value="masterbution" id="masterbution" />
+        <label for="masterbution">masterbution</label> <br />
+        <input type="checkbox" name="Skill" value="music" id="Music" />
+        <label for="Music">Music</label> <br />
+        <input type="checkbox" name="Skill" value="art" id="Art" />
+        <label for="Art">Art</label> <br />
+        <button type="submit" name="submit"><span>Submit</span></button>
+    </form>
+</body>
+
+</html>

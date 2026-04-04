@@ -1,0 +1,12 @@
+a = (1,2,3,4,5,2,1,1,1,1,2,2)
+print(type(a))
+b = (1) # isnt tuple
+print(type(b))
+c = (1,)
+print(type(c))
+one_in_a = a.count(1)
+print(one_in_a)
+index_of_5 = a.index(5)
+print(index_of_5)
+print(2 in a)
+print(len(a))

@@ -1,0 +1,52 @@
+body {
+    background-color: black;
+}
+
+.name {
+    color: aqua;
+}
+
+.about {
+    color: #00ff88;
+    background-image: url(https://i.postimg.cc/bYgFDDtk/guslospollos.jpg);
+    height: 4cm;
+    background-repeat: space;
+    border: 2px solid #0026ff;
+    border-style: dotted;
+    border-radius: 18px;
+}
+
+.about:hover {
+    background-color: #f81a1a;      
+}
+
+.content {
+    color: white;
+    border: 2px solid #0026ff;
+    border-style: dotted;
+    border-radius: 18px;
+    background-color: rgb(255, 0, 230);
+    margin: 11px 18px;
+    padding: 1px 16px;
+}
+
+*{
+    margin: 0px;
+    padding: 0%;
+}
+
+.button {
+    color: white;
+    background-color: #00ff88;
+    border: 2px solid #0026ff;
+    border-style: dotted;
+    border-radius: 18px;
+    padding: 5px 10px;
+    margin: 10px 0px;
+    box-sizing: border-box; /*border-box is default */
+}
+
+.button:hover {
+    background-color: #7e1af8;
+    border-color: #f81a1a;
+}

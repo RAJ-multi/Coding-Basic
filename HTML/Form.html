@@ -106,10 +106,13 @@
 <body>
     <div class="container">
         <h1 class="heading">Application Form</h1>
-        <form action="https://formsubmit.co/rajsen1016@email.com" method="POST">
-            <input type="text" placeholder="Enter your name" /> <br />
-            <input type="email" placeholder="Enter your email" /> <br />
-            <input type="password" placeholder="Enter your password (max=8)" maxlength="8" /> <br />
+        <form action="https://formsubmit.co/rajsen1016@email.com" method="POST" enctype="multipart/form-data">
+
+            <input type="text" name="name" placeholder="Enter your name" required /> <br />
+            <input type="email" name="email" placeholder="Enter your email" required /> <br />
+            <input type="password" name="password" placeholder="Enter your password (max=8)" maxlength="8" required />
+            <br />
+
             <h2 class="Section-heading">Gender</h2>
             <input type="radio" name="gender" value="male" id="Male" />
             <label for="Male">Male</label> <br />
@@ -117,17 +120,21 @@
             <label for="Female">Female</label> <br />
             <input type="radio" name="gender" value="other" id="Other" />
             <label for="Other">Other</label> <br />
+
             <h2 class="Club-heading">Select your club</h2>
-            <input type="checkbox" name="club" value="sports" id="Sports" class="Red green" />
+            <input type="checkbox" name="club" value="sports" id="Sports" />
             <label for="Sports">Sports</label> <br />
-            <input type="checkbox" name="club" value="music" id="Music" class="red blue" />
+            <input type="checkbox" name="club" value="music" id="Music" />
             <label for="Music">Music</label> <br />
-            <input type="checkbox" name="club" value="art" id="Art" class="red" />
+            <input type="checkbox" name="club" value="art" id="Art" />
             <label for="Art">Art</label> <br />
+
             <h2 class="birthdate-heading">Select your date of birth</h2>
             <input type="date" name="dob" /> <br />
+
             <h2 class="country-heading">Select your country</h2>
             <select name="country">
+                <option value="">--Please choose a nation--</option>
                 <option value="">--Please choose a nation--</option>
                 <option value="afghanistan">Afghanistan</option>
                 <option value="albania">Albania</option>
@@ -262,7 +269,6 @@
                 <option value="north_macedonia">North Macedonia</option>
                 <option value="norway">Norway</option>
                 <option value="oman">Oman</option>
-                <option value="pakistan">Pakistan</option>
                 <option value="palau">Palau</option>
                 <option value="panama">Panama</option>
                 <option value="papua_new_guinea">Papua New Guinea</option>
@@ -328,17 +334,21 @@
             </select> <br />
             <h2 class="Documents">Upload Documents</h2>
             <input type="file" name="documents" /> <br />
+
             <h2 class="Profile-Picture">Upload Profile Picture</h2>
-            <input type="file" name="profile-picture" accept="image/" /> <br />
+            <input type="file" name="profile-picture" accept="image/*" /> <br />
             <br />
+
             <textarea name="comments" placeholder="Why you choose this university?" rows="4" cols="50" maxlength="400"
                 id="comments"></textarea>
             <br /> <br />
 
             <input type="reset" name="reset" value="Reset Form" /> <br /> <br />
-            <button type="submit">Submit</button>
+
+            <button type="submit"><span>Submit</span></button>
         </form>
     </div>
+
 </body>
 
 </html>

@@ -1,0 +1,138 @@
+<!-- Task: Create a mini website in one HTML file that includes a navbar, sections, a table, a form, and images. -->
+<!-- 😈 FINAL BOSS: mini_website.html -->
+<!-- Goal: Everything together -->
+<!-- Create: -->
+<!-- Navbar (Home, About, Contact) -->
+<!-- Sections -->
+<!-- Table -->
+<!-- Form -->
+<!-- Images -->
+<!-- Basically a mini website in one file -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini_website</title>
+</head>
+
+<body style="background-color: black;">
+    <!-- Header -->
+    <header style="background-color: #e31515;
+    color: #eae2e2;
+    opacity: 0.9;
+    padding: 10px 20px;
+    text-align: left;
+    display: flex;       
+    align-items: center; 
+    background-image: url(https://i.postimg.cc/hjDYmpxB/lucid-origin-A-realistic-modern-university-campus-during-daytime-with-students-walking-studyi-0.jpg);
+    background-size: center;">
+        <h1 style="color: #ef1616;">Welcome to My Mini Website</h1>
+    </header>
+    <!-- Navbar -->
+    <nav Class=" navbar">
+        <ul style="list-style-type: none; display: flex; gap: 20px; background-color: #e31515;
+    color: #eae2e2;
+    opacity: 0.9;
+    padding: 10px 20px;
+    text-align: center; ::hover{color: aqua}; border: #eae2e2;">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#table">Table</a></li>
+            <li><a href="#form">Form</a></li>
+        </ul>
+
+        <!-- Sections -->
+        <section id="home" style="color: #eae2e2; padding: 20px;">
+            <h2 style="background-color: #e31515;">Home</h2>
+            <p>Welcome to the home section of my mini website. Here you can find an overview of what this website is
+                about.</p>
+        </section>
+        <section id="about" style="color: #eae2e2; padding: 20px;">
+            <h2 style="background-color: #d85454;">About</h2>
+            <p>This section provides information about the purpose of this mini website and its creator.</p>
+        </section>
+        <section id="contact" style="color: #eae2e2; padding: 20px;">
+            <h2 style="background-color: #ef1616;">Contact</h2>
+            <p>If you have any questions or would like to get in touch, please fill out the form below.</p>
+            <!-- Form -->
+            <div class="contact-form-box">
+                <h2>Message us if you need to know anything</h2>
+                <form action="https://formsubmit.co/rajsen1016@gmail.com" method="POST">
+                    <input type="text" name="name" placeholder="Your Full Name" required> <br><br>
+                    <input type="tel" name="phone" placeholder="Your Phone Number" required> <br><br>
+                    <input type="email" name="email" placeholder="Your Email Address" required> <br><br>
+                    <textarea name="message" rows="5" placeholder="Enter your message here..." required></textarea>
+                    <br><br>
+
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://raj-zenith-digital-university.netlify.app/">
+
+                    <button type="submit" class="button">
+                        <div class="wrap">
+                            <p><span>Send Message</span></p>
+                        </div>
+                    </button>
+                </form>
+
+                <!-- Table -->
+                <section style="color: #eae2e2; padding: 20px;">
+                    <h2 style="background-color: #ef1616;">Sample Table</h2>
+                    <table border="1" style="width: 100%; color: #eae2e2;">
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>City</th>
+                        </tr>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>30</td>
+                            <td>New York</td>
+                        </tr>
+                        <tr>
+                            <td>Jane Smith</td>
+                            <td>25</td>
+                            <td>Los Angeles</td>
+                        </tr>
+                        <tr>
+                            <td>Emily Johnson</td>
+                            <td>28</td>
+                            <td>Chicago</td>
+                        </tr>
+                    </table>
+
+                    <!-- Form -->
+                    <section id="form" style="color: #eae2e2; padding: 20px;">
+                        <h2 style="background-color: #ef1616;">Sample Form</h2>
+                        <form action="https://formsubmit.co/rajsen1016@email.com" method="POST"
+                            enctype="multipart/form-data">
+                            <h2>Enter your name:</h2>
+                            <input type="text" name="name" placeholder="Enter your name" required /> <br />
+                            <h2>Enter your email:</h2>
+                            <input type="email" name="email" placeholder="Enter your email" required /> <br />
+                            <h2>Enter your password</h2>
+
+                            <h2 class="Section-heading">Gender</h2>
+                            <input type="radio" name="gender" value="male" id="Male" />
+                            <label for="Male">Male</label> <br />
+                            <input type="radio" name="gender" value="female" id="Female" />
+                            <label for="Female">Female</label> <br />
+                            <input type="radio" name="gender" value="other" id="Other" />
+                            <label for="Other">Other</label> <br />
+
+                            <h2 class="Club-heading">Select your skill</h2>
+                            <input type="checkbox" name="Skill" value="masterbution" id="masterbution" />
+                            <label for="masterbution">masterbution</label> <br />
+                            <input type="checkbox" name="Skill" value="music" id="Music" />
+                            <label for="Music">Music</label> <br />
+                            <input type="checkbox" name="Skill" value="art" id="Art" />
+                            <label for="Art">Art</label> <br />
+                            <button type="submit" name="submit"><span>Submit</span></button>
+                    </section>
+    </nav>
+</body>
+
+</html>

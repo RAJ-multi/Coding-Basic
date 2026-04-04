@@ -1,0 +1,165 @@
+<!--Task:
+1)Create a table with:
+a)Name
+b)Age
+Course
+2)Use:
+a)<thead>
+b)<tbody>
+💡 Bonus:
+Add a hover effect-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Taable</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #27ae60;
+            --light-gray: #f8f9fa;
+            --text-dark: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f4f7f6;
+            color: var(--text-dark);
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .table-container {
+            width: 100%;
+            max-width: 900px;
+            overflow-x: auto;
+            /* Makes table scrollable on small screens */
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 500px;
+        }
+
+        caption {
+            padding: 20px;
+            font-size: 1.4rem;
+            font-weight: 700;
+            background-color: var(--primary-color);
+            color: white;
+            text-align: left;
+            border-radius: 12px 12px 0 0;
+        }
+
+        th {
+            background-color: var(--light-gray);
+            color: var(--primary-color);
+            padding: 18px 15px;
+            text-align: left;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 1.5px;
+            border-bottom: 2px solid #eee;
+        }
+
+        td {
+            padding: 15px;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 0.95rem;
+        }
+
+        /* Zebra Striping */
+        tbody tr:nth-child(even) {
+            background-color: #fafafa;
+        }
+
+        /* Smooth Hover State */
+        tbody tr:hover {
+            background-color: #edfcf2;
+            transform: scale(1.002);
+            transition: all 0.2s ease;
+        }
+
+        /* Course Column emphasis */
+        td:last-child {
+            font-weight: 500;
+            color: var(--primary-color);
+        }
+
+        /* Footer styling */
+        tfoot td {
+            background-color: var(--primary-color);
+            color: white;
+            font-weight: bold;
+            padding: 15px;
+            border-radius: 0 0 12px 12px;
+        }
+
+        .total-label {
+            text-align: right;
+            padding-right: 20px;
+        }
+
+        .total-count {
+            text-align: center;
+            background: var(--accent-color);
+            width: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="table-container">
+        <table>
+            <caption>Student Table</caption>
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Age</th>
+                    <th>Course Enrollment</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>20</td>
+                    <td>Data Structures and Algorithms</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>22</td>
+                    <td>Operating Systems</td>
+                </tr>
+                <tr>
+                    <td>David Miller</td>
+                    <td>21</td>
+                    <td>Computer Networks</td>
+                </tr>
+                <tr>
+                    <td>Michael Chen</td>
+                    <td>23</td>
+                    <td>AI & Machine Learning</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2" class="total-label">Total Applicants Processed</td>
+                    <td class="total-count">4</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+</body>
+
+</html>
